@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MiniShop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <h2 class="logo">MiniShop</h2>
+
+  <div class="menu" id="menu">
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#" onclick="openCart()">Cart (<span id="cartCount">0</span>)</a>
+  </div>
+
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Welcome to MiniShop</h1>
+  <p>Best Deals Everyday</p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="productContainer"></section>
+
+<!-- CART -->
+<div class="cart-panel" id="cartPanel">
+  <h2>Your Cart</h2>
+  <div id="cartItems"></div>
+  <h3 id="total"></h3>
+  <button onclick="closeCart()">Close</button>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">Back to Top</div>
+
+  <div class="footer-content">
+    <div>
+      <h3>About</h3>
+      <p>About Us</p>
+      <p>Careers</p>
+    </div>
+
+    <div>
+      <h3>Help</h3>
+      <p>Customer Service</p>
+      <p>Returns</p>
+    </div>
+
+    <div>
+      <h3>Connect</h3>
+      <p>Instagram</p>
+      <p>Twitter</p>
+    </div>
+  </div>
+
+  <p class="footer-bottom">© 2026 MiniShop</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
